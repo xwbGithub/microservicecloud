@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.eclipse.jetty:jetty-annotations:9.4.7.v20170914">
+    <CLASSES>
+      <root url="jar://E:/maven/repo/org/eclipse/jetty/jetty-annotations/9.4.7.v20170914/jetty-annotations-9.4.7.v20170914.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/maven/repo/org/eclipse/jetty/jetty-annotations/9.4.7.v20170914/jetty-annotations-9.4.7.v20170914-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/maven/repo/org/eclipse/jetty/jetty-annotations/9.4.7.v20170914/jetty-annotations-9.4.7.v20170914-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
