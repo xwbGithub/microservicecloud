@@ -1,0 +1,12 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: microservicecloud-config
+  cloud:
+    config:
+      server:
+        git:
+          #username:  xwbGithub
+          #password: xxx
+          uri: https://github.com/xwbGithub/microservicecloud-config.git #github上的原始地址
