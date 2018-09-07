@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        enabled: true
+        instance-id: consul-client
+        serviceName: consul-client
+        hostname: localhost
+        port: ${server.port}
+        healthCheckUrl: http://127.0.0.1:${server.port}/health
+        healthCheckInterval: 10s
+        tags: dev

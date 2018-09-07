@@ -1,0 +1,17 @@
+server:
+  port: 8800
+spring:
+  cloud:
+    consul:
+      enabled: true #是否启用consul
+      host: localhost #主机ip地址
+      port: 8500 #客户端端口号
+      discovery:
+        enabled: true #是否去发现其他服务
+        instance-id: consul-server-1
+        service-name: consul-server-1
+        hostname: localhost #客户端ip地址
+        healthCheckUrl: http://localhost:${server.port}/health
+        healthCheckInterval: 10s
+        tags: dev
+        port: ${server.port}

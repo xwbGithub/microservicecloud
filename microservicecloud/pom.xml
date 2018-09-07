@@ -108,6 +108,9 @@
         <module>microservicecloud-config-client-3355</module>
         <module>microservicecloud-config-dept-client-8001</module>
         <module>microservicecloud-config-eureka-client-7001</module>
+        <module>microservicecloud-consul-client</module>
+        <module>microservicecloud-consul-server-8500</module>
+        <module>microservicecloud-consul-server-8600</module>
     </modules>
 
 </project>
