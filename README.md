@@ -10,4 +10,10 @@
 5、microservicecloud-provider-dept-hystrix-8001
   服务熔断模块，可以指定 @HystrixCommand来对程序运行出错进行进一步的容错信息捕获。
 6、microservicecloud-consumer-hystrix-dashboard
-  
+  服务监控，具体的实现可以查看以下网址https://blog.csdn.net/www1056481167/article/details/81157409
+7、microservicecloud-config-3344、microservicecloud-config-client-3355
+  3344指定config的服务（其中指定远程config的远程git地址），而3355是调用3344的微服务锁指定的配置文件内容。
+8、microservicecloud-consumer-dept-80、microservicecloud-consumer-dept-feign
+  负载均衡微服务,80为具体的客户端，feign为具体的负载均衡算法，通过客户端的RestTemplate调用具体的微服务，可以看到具体使用那个服务进行负载均衡
+9、microservicecloud-zuul-gateway-9527
+  为具体的路由网关，通过路由网关访问以上各个微服务。可以在路由网关出加一些访问限制,可以在添加zuul.xxx的一些路由映射规则。
