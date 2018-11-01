@@ -14,6 +14,6 @@
 7、microservicecloud-config-3344、microservicecloud-config-client-3355
   3344指定config的服务（其中指定远程config的远程git地址），而3355是调用3344的微服务锁指定的配置文件内容。
 8、microservicecloud-consumer-dept-80、microservicecloud-consumer-dept-feign
-  负载均衡微服务,80为具体的客户端，feign为具体的负载均衡算法，通过客户端的RestTemplate调用具体的微服务，可以看到具体使用那个服务进行负载均衡
+  其中80的朱启动类添加@RibbonClient(name = "MICROSERVICECLOUD-DEPT", configuration = MySelfRule.class)对MICROSERVICECLOUD-DEPT进行负载均衡，feign客户端调用的负载均衡算法，通过客户端的RestTemplate调用具体的微服务，可以看到具体使用那个服务进行负载均衡
 9、microservicecloud-zuul-gateway-9527
   为具体的路由网关，通过路由网关访问以上各个微服务。可以在路由网关出加一些访问限制,可以在添加zuul.xxx的一些路由映射规则。
